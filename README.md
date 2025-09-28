@@ -2,7 +2,7 @@
 
 A fully-featured multi-tenant SaaS Notes application built with the MERN stack, featuring role-based access control, subscription management, and tenant isolation.
 
-## 🌟 Features
+## Features
 
 - **Multi-Tenancy**: Secure tenant isolation using shared schema approach with tenant ID
 - **Authentication**: JWT-based authentication with role-based access control
@@ -12,14 +12,14 @@ A fully-featured multi-tenant SaaS Notes application built with the MERN stack, 
 - **Real-time Limits**: Dynamic subscription limit enforcement
 - **Responsive UI**: Clean, modern interface using specified color scheme
 
-## 🎨 Color Scheme
+## Color Scheme
 
 - **Primary Dark**: `#222831` - Main backgrounds and text
 - **Secondary Dark**: `#393E46` - Secondary elements
 - **Tertiary**: `#948979` - Accent elements
 - **Primary Light**: `#DFD0B8` - Light backgrounds and highlights
 
-## 🏗 Architecture
+## Architecture
 
 ### Multi-Tenancy Approach: Shared Schema with Tenant ID
 
@@ -90,7 +90,7 @@ A fully-featured multi-tenant SaaS Notes application built with the MERN stack, 
 }
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -172,7 +172,7 @@ All test accounts use the password: `password`
 - `GET /api/tenants/subscription` - Get subscription status
 - `POST /api/tenants/:slug/upgrade` - Upgrade subscription (Admin only)
 
-## 🔒 Security Features
+## Security Features
 
 ### Tenant Isolation
 - All queries automatically filtered by tenant ID
@@ -192,7 +192,7 @@ All test accounts use the password: `password`
 - Helmet.js security headers
 - Error message sanitization
 
-## 📊 Subscription System
+## Subscription System
 
 ### Free Plan
 - Limited to 3 notes per tenant
@@ -211,7 +211,7 @@ All test accounts use the password: `password`
 4. Note limit lifted instantly
 5. UI reflects new status
 
-## 🚀 Deployment
+##  Deployment
 
 ### Backend Deployment (Vercel)
 
@@ -259,40 +259,40 @@ For production, use MongoDB Atlas:
 4. Get the connection string
 5. Update `MONGODB_URI` in your environment variables
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing Checklist
 
-✅ **Health Endpoint**
+**Health Endpoint**
 - [ ] `/health` returns `{"status": "ok"}`
 
-✅ **Authentication**
+ **Authentication**
 - [ ] All test accounts can login successfully
 - [ ] Invalid credentials are rejected
 - [ ] JWT tokens are generated and validated
 
-✅ **Tenant Isolation**
+ **Tenant Isolation**
 - [ ] Users can only see their tenant's notes
 - [ ] Cross-tenant access attempts are blocked
 - [ ] Admin actions are restricted to their tenant
 
-✅ **Role-Based Access**
+ **Role-Based Access**
 - [ ] Members cannot invite users
 - [ ] Members cannot upgrade subscriptions
 - [ ] Admins have full access within their tenant
 
-✅ **Subscription Limits**
+ **Subscription Limits**
 - [ ] Free plan enforces 3-note limit
 - [ ] Note creation blocked when limit reached
 - [ ] Pro upgrade removes limits immediately
 
-✅ **CRUD Operations**
+ **CRUD Operations**
 - [ ] Create notes with validation
 - [ ] Read notes with pagination
 - [ ] Update notes with proper authorization
 - [ ] Delete notes with confirmation
 
-## 🔧 Development
+##  Development
 
 ### Project Structure
 ```
@@ -331,7 +331,7 @@ FRONTEND_URL=http://localhost:3000
 REACT_APP_API_URL=http://localhost:5000
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -339,11 +339,11 @@ REACT_APP_API_URL=http://localhost:5000
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
 
-## 🆘 Support
+## Support
 
 If you encounter any issues:
 
